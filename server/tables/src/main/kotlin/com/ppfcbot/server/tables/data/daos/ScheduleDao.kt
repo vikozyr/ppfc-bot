@@ -4,6 +4,7 @@
 
 package com.ppfcbot.server.tables.data.daos
 
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import com.ppfcbot.server.tables.data.models.Schedule
 
 internal interface ScheduleDao : TablesEntityDao<Schedule> {
@@ -16,7 +17,7 @@ internal interface ScheduleDao : TablesEntityDao<Schedule> {
         eventName: String?,
         isSubject: Boolean,
         lessonNumber: Long,
-        isNumerator: Boolean,
+        weekAlternation: WeekAlternation,
         dayNumber: Long
     ): Long
 
@@ -29,7 +30,7 @@ internal interface ScheduleDao : TablesEntityDao<Schedule> {
         eventName: String?,
         isSubject: Boolean,
         lessonNumber: Long,
-        isNumerator: Boolean,
+        weekAlternation: WeekAlternation,
         dayNumber: Long
     )
 
@@ -37,7 +38,7 @@ internal interface ScheduleDao : TablesEntityDao<Schedule> {
         offset: Long? = null,
         limit: Long? = null,
         dayNumber: Long? = null,
-        isNumerator: Boolean? = null,
+        weekAlternation: WeekAlternation? = null,
         groupId: Long? = null,
         groupNumber: Long? = null,
         teacherId: Long? = null

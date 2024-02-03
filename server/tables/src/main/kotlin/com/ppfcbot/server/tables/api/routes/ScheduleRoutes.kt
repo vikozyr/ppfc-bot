@@ -6,6 +6,7 @@ package com.ppfcbot.server.tables.api.routes
 
 import com.ppfcbot.common.api.models.tables.ScheduleRequest
 import com.ppfcbot.server.tables.api.tablesResponseHandler
+import com.ppfcbot.server.tables.api.util.toAlternation
 import com.ppfcbot.server.tables.api.util.toIdsList
 import com.ppfcbot.server.tables.data.repositories.ScheduleRepository
 import io.ktor.http.*
@@ -25,7 +26,7 @@ fun Route.scheduleRouting() {
                     offset = call.request.queryParameters["offset"]?.toLongOrNull(),
                     limit = call.request.queryParameters["limit"]?.toLongOrNull(),
                     dayNumber = call.request.queryParameters["dayNumber"]?.toLongOrNull(),
-                    isNumerator = call.request.queryParameters["isNumerator"]?.toBooleanStrictOrNull(),
+                    weekAlternation = call.request.queryParameters["weekAlternation"]?.toAlternation(),
                     groupId = call.request.queryParameters["groupId"]?.toLongOrNull(),
                     groupNumber = call.request.queryParameters["groupNumber"]?.toLongOrNull(),
                     teacherId = call.request.queryParameters["teacherId"]?.toLongOrNull()

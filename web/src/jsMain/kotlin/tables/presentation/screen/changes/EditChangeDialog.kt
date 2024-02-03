@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import coreui.compose.*
 import coreui.compose.base.*
 import coreui.theme.AppTheme
@@ -20,7 +21,6 @@ import org.jetbrains.compose.web.css.px
 import org.jetbrains.compose.web.css.width
 import tables.domain.model.Change
 import tables.domain.model.DayNumber
-import tables.domain.model.WeekAlternation
 import tables.presentation.common.mapper.toTextRepresentation
 import tables.presentation.compose.PagingDropDownMenu
 import tables.presentation.screen.changes.mapper.toDomain
@@ -177,7 +177,7 @@ fun EditChangeDialog(
                 Spacer(height = 16.px)
 
                 DropDownMenu(
-                    items = WeekAlternation.entries.toList(),
+                    items = WeekAlternation.entries.filterNot { it == WeekAlternation.BOTH }.toList(),
                     selectedItem = viewState.changeState.weekAlternation,
                     label = AppTheme.stringResources.changesWeekAlternation,
                     itemLabel = { item ->

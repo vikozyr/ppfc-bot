@@ -15,5 +15,5 @@ data class ScheduleRequest(
     val eventName: String?,
     val lessonNumber: Long,
     val dayNumber: Long,
-    val isNumerator: Boolean
+    val weekAlternation: WeekAlternation
 )

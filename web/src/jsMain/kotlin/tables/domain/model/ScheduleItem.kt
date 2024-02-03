@@ -4,6 +4,8 @@
 
 package tables.domain.model
 
+import com.ppfcbot.common.api.models.tables.WeekAlternation
+
 data class ScheduleItem(
     val id: Id = Id.Empty,
     val group: Group = Group.Empty,
@@ -14,7 +16,7 @@ data class ScheduleItem(
     val isSubject: Boolean = false,
     val lessonNumber: LessonNumber = LessonNumber.N1,
     val dayNumber: DayNumber = DayNumber.N1,
-    val weekAlternation: WeekAlternation = WeekAlternation.NUMERATOR
+    val weekAlternation: WeekAlternation = WeekAlternation.BOTH
 ) {
     companion object {
         val Empty = ScheduleItem()

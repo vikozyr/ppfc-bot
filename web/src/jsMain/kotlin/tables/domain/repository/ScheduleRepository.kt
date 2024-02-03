@@ -5,6 +5,7 @@
 package tables.domain.repository
 
 import app.cash.paging.PagingSource
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import tables.domain.model.*
 
 interface ScheduleRepository {

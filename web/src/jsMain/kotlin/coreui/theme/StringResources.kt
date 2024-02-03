@@ -155,6 +155,7 @@ data class StringResources(
     val sunday: String,
 
     val weekAlternationAll: String,
+    val weekAlternationBoth: String,
     val weekAlternationNumerator: String,
     val weekAlternationDenominator: String,
 )

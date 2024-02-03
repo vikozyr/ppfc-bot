@@ -4,6 +4,7 @@
 
 package tables.presentation.screen.schedule.model
 
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import coreui.model.TextFieldState
 import tables.domain.model.*
 import tables.presentation.compose.PagingDropDownMenuState
@@ -17,7 +18,7 @@ data class ScheduleItemState(
     val eventName: TextFieldState = TextFieldState.Empty,
     val lessonNumber: ScheduleLessonNumberOption = ScheduleLessonNumberOption.N1,
     val dayNumber: DayNumber = DayNumber.N1,
-    val weekAlternation: WeekAlternation = WeekAlternation.NUMERATOR
+    val weekAlternation: WeekAlternation = WeekAlternation.BOTH
 ) {
     companion object {
         val Empty = ScheduleItemState()

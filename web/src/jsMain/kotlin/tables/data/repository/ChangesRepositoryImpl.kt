@@ -6,11 +6,13 @@ package tables.data.repository
 
 import androidx.paging.PagingState
 import app.cash.paging.PagingSource
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import core.domain.ApiException
 import infrastructure.extensions.toISO8601DateString
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import tables.data.dao.ChangesDao
+import tables.data.mapper.isNumerator
 import tables.data.mapper.toDomain
 import tables.data.mapper.toRequest
 import tables.domain.model.*

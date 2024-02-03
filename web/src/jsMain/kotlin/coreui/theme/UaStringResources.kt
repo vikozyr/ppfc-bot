@@ -147,6 +147,7 @@ val uaStringResources = StringResources(
     sunday = "Неділя",
 
     weekAlternationAll = "Всі",
+    weekAlternationBoth = "Завжди",
     weekAlternationNumerator = "Чисельник",
     weekAlternationDenominator = "Знаменник",
 )

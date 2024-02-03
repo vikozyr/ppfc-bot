@@ -4,6 +4,7 @@
 
 package com.ppfcbot.server.tables.data.repositories
 
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import com.ppfcbot.common.api.models.tables.ScheduleRequest
 import com.ppfcbot.common.api.models.tables.ScheduleResponse
 
@@ -14,7 +15,7 @@ internal interface ScheduleRepository {
         offset: Long? = null,
         limit: Long? = null,
         dayNumber:Long? = null,
-        isNumerator: Boolean? = null,
+        weekAlternation: WeekAlternation? = null,
         groupId: Long? = null,
         groupNumber: Long? = null,
         teacherId: Long? = null

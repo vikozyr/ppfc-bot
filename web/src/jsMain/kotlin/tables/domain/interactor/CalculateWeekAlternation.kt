@@ -4,7 +4,7 @@
 
 package tables.domain.interactor
 
-import tables.domain.model.WeekAlternation
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import kotlin.js.Date
 import kotlin.math.floor
 

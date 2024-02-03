@@ -7,6 +7,7 @@ package tables.presentation.screen.schedule
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import coreui.compose.*
 import coreui.compose.base.*
 import coreui.theme.AppIconClass

@@ -7,6 +7,7 @@ package tables.presentation.screen.schedule
 import app.cash.paging.PagingConfig
 import app.cash.paging.PagingData
 import app.cash.paging.cachedIn
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import core.extensions.combine
 import coreui.common.ApiCommonErrorMapper
 import coreui.extensions.onSuccess

@@ -4,10 +4,10 @@
 
 package tables.presentation.screen.changes.model
 
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import infrastructure.extensions.plusDays
 import tables.domain.interactor.calculateWeekAlternation
 import tables.domain.model.DayNumber
-import tables.domain.model.WeekAlternation
 import tables.presentation.common.mapper.toDayNumber
 import kotlin.js.Date
 

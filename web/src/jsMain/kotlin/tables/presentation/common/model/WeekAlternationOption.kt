@@ -6,6 +6,7 @@ package tables.presentation.common.model
 
 enum class WeekAlternationOption {
     ALL,
+    BOTH,
     NUMERATOR,
     DENOMINATOR
 }

@@ -4,13 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d596ca7-d035-4dec-8491-d0a46cbcf1b4" name="Changes" comment="Initial">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="3d596ca7-d035-4dec-8491-d0a46cbcf1b4" name="Changes" comment="Feat: change week alternation options">
+      <change afterPath="$PROJECT_DIR$/common/src/commonMain/kotlin/com/ppfcbot/common/api/models/tables/WeekAlternation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/api/routes/UserRoutes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/api/routes/UserRoutes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/daos/UserDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/daos/UserDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/dbsqldelight/daos/SqlDelightUserDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/dbsqldelight/daos/SqlDelightUserDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/repositories/UserRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/repositories/UserRepositoryImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/commonMain/kotlin/com/ppfcbot/common/api/models/tables/ScheduleRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/commonMain/kotlin/com/ppfcbot/common/api/models/tables/ScheduleRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/commonMain/kotlin/com/ppfcbot/common/api/models/tables/ScheduleResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/commonMain/kotlin/com/ppfcbot/common/api/models/tables/ScheduleResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/kotlin/com/ppfcbot/server/api/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/kotlin/com/ppfcbot/server/api/Application.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/api/routes/ScheduleRoutes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/api/routes/ScheduleRoutes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/api/util/IdsParameterMappers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/api/util/IdsParameterMappers.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/daos/ScheduleDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/daos/ScheduleDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/dbsqldelight/daos/SqlDelightScheduleDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/dbsqldelight/daos/SqlDelightScheduleDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/dbsqldelight/utils/SqlUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/dbsqldelight/utils/SqlUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/models/Schedule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/models/Schedule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/repositories/ScheduleRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/repositories/ScheduleRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/repositories/ScheduleRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/server/tables/src/main/kotlin/com/ppfcbot/server/tables/data/repositories/ScheduleRepositoryImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tables/src/main/sqldelight/com/ppfcbot/server/tables/database/Change.sq" beforeDir="false" afterPath="$PROJECT_DIR$/server/tables/src/main/sqldelight/com/ppfcbot/server/tables/database/Change.sq" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tables/src/main/sqldelight/com/ppfcbot/server/tables/database/Schedule.sq" beforeDir="false" afterPath="$PROJECT_DIR$/server/tables/src/main/sqldelight/com/ppfcbot/server/tables/database/Schedule.sq" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/coreui/theme/StringResources.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/coreui/theme/StringResources.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/coreui/theme/UaStringResources.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/coreui/theme/UaStringResources.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/data/dao/ScheduleDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/data/dao/ScheduleDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/data/dao/ScheduleDaoImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/data/dao/ScheduleDaoImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/data/mapper/ScheduleItemMappers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/data/mapper/ScheduleItemMappers.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/data/mapper/WeekAlternationMappers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/data/mapper/WeekAlternationMappers.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/data/repository/ChangesRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/data/repository/ChangesRepositoryImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/data/repository/ScheduleRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/data/repository/ScheduleRepositoryImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/domain/interactor/CalculateWeekAlternation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/domain/interactor/CalculateWeekAlternation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/domain/model/Change.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/domain/model/Change.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/domain/model/ScheduleItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/domain/model/ScheduleItem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/domain/model/WeekAlternation.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/domain/observer/ObservePagedChanges.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/domain/observer/ObservePagedChanges.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/domain/observer/ObservePagedSchedule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/domain/observer/ObservePagedSchedule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/domain/repository/ChangesRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/domain/repository/ChangesRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/domain/repository/ScheduleRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/domain/repository/ScheduleRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/common/mapper/WeekAlternationMappers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/common/mapper/WeekAlternationMappers.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/common/model/WeekAlternationOption.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/common/model/WeekAlternationOption.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/changes/CreateChangesDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/changes/CreateChangesDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/changes/CreateChangesViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/changes/CreateChangesViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/changes/EditChangeDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/changes/EditChangeDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/changes/EditChangeViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/changes/EditChangeViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/changes/mapper/ChangeMappers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/changes/mapper/ChangeMappers.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/changes/model/ChangeState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/changes/model/ChangeState.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/changes/model/ChangesCommonLessonState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/changes/model/ChangesCommonLessonState.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/schedule/CreateScheduleItemsDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/schedule/CreateScheduleItemsDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/schedule/CreateScheduleItemsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/schedule/CreateScheduleItemsViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/schedule/EditScheduleItemDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/schedule/EditScheduleItemDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/schedule/EditScheduleItemViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/schedule/EditScheduleItemViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/schedule/ScheduleViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/schedule/ScheduleViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/schedule/model/ScheduleItemState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/schedule/model/ScheduleItemState.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/schedule/model/ScheduleLessonState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/jsMain/kotlin/tables/presentation/screen/schedule/model/ScheduleLessonState.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +112,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Enum" />
         <option value="Kotlin Data Class" />
         <option value="Kotlin Interface" />
         <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Enum" />
       </list>
     </option>
   </component>
@@ -117,9 +159,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "android.gradle.sync.needed": "true",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "corretto-19",
-    "last_opened_file_path": "C:/Users/vitalii/Desktop/Project/Project/Server",
+    "last_opened_file_path": "C:/Users/vitalii/Desktop/Kotlin/ppfc-bot",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -133,18 +176,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vitalii\Desktop\Kotlin\ppfc-bot" />
       <recent name="C:\Users\vitalii\Desktop\Kotlin\ppfc-bot\server\infrastructure\src\main\kotlin\com\ppfcbot\server\infrastructure\config" />
       <recent name="C:\Users\vitalii\Desktop\Kotlin\ppfc-bot\web\src\jsMain\kotlin\tables\presentation\screen\tablesbar\workingsaturdays" />
       <recent name="C:\Users\vitalii\Desktop\Kotlin\ppfc-bot\web\src\jsMain\kotlin\tables\data\mapper" />
       <recent name="C:\Users\vitalii\Desktop\Kotlin\ppfc-bot\web\src\jsMain\kotlin\coreui\compose" />
-      <recent name="C:\Users\vitalii\Desktop\Kotlin\ppfc-bot\web\src\jsMain\kotlin\tables\presentation\screen\tablesbar\bellschedule" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\vitalii\Desktop\Kotlin\ppfc-bot\server\auxiliary\src\main\kotlin\com\ppfcbot\server\auxiliary\data" />
-      <recent name="C:\Users\vitalii\Desktop\Kotlin\ppfc-bot\server\auxiliary\src\main\kotlin\com\ppfcbot\server\auxiliary\workingsaturdays" />
-      <recent name="C:\Users\vitalii\Desktop\Kotlin\ppfc-bot\web\src\jsMain\kotlin\tables\presentation\screen\tables\accesskey" />
-      <recent name="C:\Users\vitalii\Desktop\Kotlin\ppfc-bot" />
-      <recent name="C:\Users\vitalii\Desktop\Kotlin\ppfc-bot\gradle" />
+      <recent name="C:\Users\vitalii\Desktop\Kotlin\ppfc-bot\server\tables\src\main\kotlin\com\ppfcbot\server\tables\data\repositories" />
+      <recent name="C:\Users\vitalii\Desktop\Kotlin\ppfc-bot\server\tables\src\main\kotlin\com\ppfcbot\server\tables\data\models" />
+      <recent name="C:\Users\vitalii\Desktop\Kotlin\ppfc-bot\server\tables\src\main\kotlin\com\ppfcbot\server\tables\data\dbsqldelight\daos" />
+      <recent name="C:\Users\vitalii\Desktop\Kotlin\ppfc-bot\server\tables\src\main\kotlin\com\ppfcbot\server\tables\data\daos" />
+      <recent name="C:\Users\vitalii\Desktop\Kotlin\ppfc-bot\server\tables\src\main\sqldelight\com\ppfcbot\server\tables\database" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.ppfcbot.server.auxiliary.workingsaturdays" />
@@ -162,6 +205,50 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.ppfc-bot:web [build]">
+    <configuration name="ppfc-bot:server [generateMainTablesDatabaseInterface]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/server" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="generateMainTablesDatabaseInterface" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ppfc-bot:server [verifyMainTablesDatabaseMigration]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/server" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="verifyMainTablesDatabaseMigration" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="ppfc-bot:web [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -215,6 +302,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.ppfc-bot:server [generateMainTablesDatabaseInterface]" />
+      <item itemvalue="Gradle.ppfc-bot:server [verifyMainTablesDatabaseMigration]" />
       <item itemvalue="Gradle.ppfc-bot:web [build]" />
       <item itemvalue="Gradle.ppfc-bot:web [jsBrowserRun]" />
       <item itemvalue="Kotlin.ApplicationKt" />
@@ -224,6 +313,8 @@
         <item itemvalue="Gradle.ppfc-bot:web [build]" />
         <item itemvalue="Gradle.ppfc-bot:web [jsBrowserRun]" />
         <item itemvalue="Kotlin.ApplicationKt" />
+        <item itemvalue="Gradle.ppfc-bot:server [generateMainTablesDatabaseInterface]" />
+        <item itemvalue="Gradle.ppfc-bot:server [verifyMainTablesDatabaseMigration]" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +333,12 @@
       <workItem from="1695278893699" duration="29544000" />
       <workItem from="1695375471917" duration="48125000" />
       <workItem from="1695492015874" duration="671000" />
-      <workItem from="1695722889684" duration="2155000" />
+      <workItem from="1695722889684" duration="3658000" />
+      <workItem from="1695805238361" duration="41000" />
+      <workItem from="1695805502642" duration="35000" />
+      <workItem from="1699858296626" duration="535000" />
+      <workItem from="1706912615297" duration="250000" />
+      <workItem from="1706913159098" duration="12717000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <option name="closed" value="true" />
@@ -290,6 +386,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
+    <MESSAGE value="Feat: change week alternation options" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: change week alternation options" />
   </component>
 </project>

@@ -4,6 +4,7 @@
 
 package tables.data.dao
 
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import com.ppfcbot.common.api.models.tables.ScheduleRequest
 import com.ppfcbot.common.api.models.tables.ScheduleResponse
 
@@ -24,7 +25,7 @@ interface ScheduleDao {
         limit: Long,
         offset: Long,
         dayNumber: Long?,
-        isNumerator: Boolean?,
+        weekAlternation: WeekAlternation?,
         groupId: Long?,
         teacherId: Long?
     ): List<ScheduleResponse>

@@ -4,6 +4,7 @@
 
 package com.ppfcbot.server.tables.data.repositories
 
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import com.ppfcbot.common.api.models.tables.ScheduleRequest
 import com.ppfcbot.common.api.models.tables.ScheduleResponse
 import com.ppfcbot.server.tables.data.daos.ScheduleDao
@@ -21,7 +22,7 @@ internal fun Schedule.toResponse() = ScheduleResponse(
     isSubject = subject != null,
     lessonNumber = lessonNumber,
     dayNumber = dayNumber,
-    isNumerator = isNumerator
+    weekAlternation = weekAlternation
 )
 
 internal class ScheduleRepositoryImpl(
@@ -38,7 +39,7 @@ internal class ScheduleRepositoryImpl(
             isSubject = scheduleRequest.subjectId != null,
             lessonNumber = scheduleRequest.lessonNumber,
             dayNumber = scheduleRequest.dayNumber,
-            isNumerator = scheduleRequest.isNumerator
+            weekAlternation = scheduleRequest.weekAlternation
         )
     }
 
@@ -52,7 +53,7 @@ internal class ScheduleRepositoryImpl(
         offset: Long?,
         limit: Long?,
         dayNumber: Long?,
-        isNumerator: Boolean?,
+        weekAlternation: WeekAlternation?,
         groupId: Long?,
         groupNumber: Long?,
         teacherId: Long?
@@ -61,7 +62,7 @@ internal class ScheduleRepositoryImpl(
             offset,
             limit,
             dayNumber,
-            isNumerator,
+            weekAlternation,
             groupId,
             groupNumber,
             teacherId
@@ -82,7 +83,7 @@ internal class ScheduleRepositoryImpl(
             isSubject = scheduleRequest.subjectId != null,
             lessonNumber = scheduleRequest.lessonNumber,
             dayNumber = scheduleRequest.dayNumber,
-            isNumerator = scheduleRequest.isNumerator
+            weekAlternation = scheduleRequest.weekAlternation
         )
     }
 

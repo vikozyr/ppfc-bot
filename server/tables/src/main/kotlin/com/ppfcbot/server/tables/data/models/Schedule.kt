@@ -4,6 +4,8 @@
 
 package com.ppfcbot.server.tables.data.models
 
+import com.ppfcbot.common.api.models.tables.WeekAlternation
+
 internal data class Schedule(
     override val id: Long = -1L,
     val group: Group = Group(),
@@ -14,5 +16,5 @@ internal data class Schedule(
     val isSubject: Boolean = false,
     val lessonNumber: Long = 0L,
     val dayNumber: Long = 0L,
-    val isNumerator: Boolean = false
+    val weekAlternation: WeekAlternation = WeekAlternation.BOTH
 ) : AppEntity<Long>

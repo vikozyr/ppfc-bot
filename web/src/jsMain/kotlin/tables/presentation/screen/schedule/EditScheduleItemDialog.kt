@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import coreui.compose.*
 import coreui.compose.base.*
 import coreui.theme.AppTheme
@@ -20,7 +21,6 @@ import org.jetbrains.compose.web.css.px
 import org.jetbrains.compose.web.css.width
 import tables.domain.model.DayNumber
 import tables.domain.model.ScheduleItem
-import tables.domain.model.WeekAlternation
 import tables.presentation.common.mapper.toTextRepresentation
 import tables.presentation.compose.PagingDropDownMenu
 import tables.presentation.screen.schedule.mapper.toDomain

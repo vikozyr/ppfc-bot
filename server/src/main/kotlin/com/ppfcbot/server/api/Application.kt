@@ -21,7 +21,6 @@ fun Application.module() {
     configureCors()
     configureDependencyInjection()
     configureSerialization()
-
     configureSecurityFeature()
     configureTablesFeature()
     configureContentFeature()

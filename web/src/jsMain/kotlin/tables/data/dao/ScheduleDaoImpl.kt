@@ -7,6 +7,7 @@ package tables.data.dao
 import api.ApiClient
 import com.ppfcbot.common.api.models.tables.ScheduleRequest
 import com.ppfcbot.common.api.models.tables.ScheduleResponse
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 import io.ktor.http.*
@@ -55,7 +56,7 @@ class ScheduleDaoImpl(
         limit: Long,
         offset: Long,
         dayNumber: Long?,
-        isNumerator: Boolean?,
+        weekAlternation: WeekAlternation?,
         groupId: Long?,
         teacherId: Long?
     ): List<ScheduleResponse> {
@@ -63,7 +64,7 @@ class ScheduleDaoImpl(
             if (limit > 0) parameter("limit", limit)
             if (offset > 0) parameter("offset", offset)
             if (dayNumber != null) parameter("dayNumber", dayNumber)
-            if (isNumerator != null) parameter("isNumerator", isNumerator)
+            if (weekAlternation != null) parameter("weekAlternation", weekAlternation)
             if (groupId != null) parameter("groupId", groupId)
             if (teacherId != null) parameter("teacherId", teacherId)
         }.body()

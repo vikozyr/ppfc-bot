@@ -4,6 +4,7 @@
 
 package tables.domain.model
 
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import kotlin.js.Date
 
 data class Change(

@@ -4,6 +4,7 @@
 
 package tables.presentation.screen.changes.model
 
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import coreui.model.TextFieldState
 import tables.domain.interactor.calculateWeekAlternation
 import tables.domain.model.*

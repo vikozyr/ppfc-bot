@@ -4,6 +4,7 @@
 
 package tables.presentation.screen.changes.mapper
 
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import coreui.model.TextFieldState
 import tables.domain.model.*
 import tables.presentation.compose.PagingDropDownMenuState

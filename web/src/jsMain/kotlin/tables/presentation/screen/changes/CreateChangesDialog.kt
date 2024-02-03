@@ -7,6 +7,7 @@ package tables.presentation.screen.changes
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import coreui.compose.*
 import coreui.compose.base.*
 import coreui.theme.AppIconClass
@@ -78,7 +79,7 @@ fun CreateChangesDialog(
                 Spacer(width = 16.px)
 
                 DropDownMenu(
-                    items = WeekAlternation.entries.toList(),
+                    items = WeekAlternation.entries.filterNot { it == WeekAlternation.BOTH }.toList(),
                     selectedItem = viewState.changesCommonLesson.weekAlternation,
                     label = AppTheme.stringResources.changesWeekAlternation,
                     itemLabel = { item ->

@@ -4,9 +4,12 @@
 
 package com.ppfcbot.server.tables.data.dbsqldelight.daos
 
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import com.ppfcbot.server.tables.data.daos.ScheduleDao
+import com.ppfcbot.server.tables.data.dbsqldelight.utils.toAlternation
 import com.ppfcbot.server.tables.data.dbsqldelight.utils.toBoolean
 import com.ppfcbot.server.tables.data.dbsqldelight.utils.toSqlBoolean
+import com.ppfcbot.server.tables.data.dbsqldelight.utils.toSqlInteger
 import com.ppfcbot.server.tables.data.models.*
 import com.ppfcbot.server.tables.database.TablesDatabase
 import com.ppfcbot.server.tables.database.schedule.SelectWithParameters
@@ -24,7 +27,7 @@ internal class SqlDelightScheduleDao(
         isSubject = entity.isSubject,
         lessonNumber = entity.lessonNumber,
         dayNumber = entity.dayNumber,
-        isNumerator = entity.isNumerator
+        weekAlternation = entity.weekAlternation
     )
 
     override fun insert(
@@ -35,7 +38,7 @@ internal class SqlDelightScheduleDao(
         eventName: String?,
         isSubject: Boolean,
         lessonNumber: Long,
-        isNumerator: Boolean,
+        weekAlternation: WeekAlternation,
         dayNumber: Long
     ): Long {
         db.scheduleQueries.insert(
@@ -48,7 +51,7 @@ internal class SqlDelightScheduleDao(
             isSubject = isSubject.toSqlBoolean(),
             lessonNumber = lessonNumber,
             dayNumber = dayNumber,
-            isNumerator = isNumerator.toSqlBoolean()
+            alternation = weekAlternation.toSqlInteger()
         )
 
         return db.scheduleQueries.lastInsertRowId().executeAsOne()
@@ -64,7 +67,7 @@ internal class SqlDelightScheduleDao(
         isSubject = entity.isSubject,
         lessonNumber = entity.lessonNumber,
         dayNumber = entity.dayNumber,
-        isNumerator = entity.isNumerator
+        weekAlternation = entity.weekAlternation
     )
 
     override fun update(
@@ -76,7 +79,7 @@ internal class SqlDelightScheduleDao(
         eventName: String?,
         isSubject: Boolean,
         lessonNumber: Long,
-        isNumerator: Boolean,
+        weekAlternation: WeekAlternation,
         dayNumber: Long
     ) {
         db.scheduleQueries.updateWhereId(
@@ -88,7 +91,7 @@ internal class SqlDelightScheduleDao(
             isSubject = isSubject.toSqlBoolean(),
             lessonNumber = lessonNumber,
             dayNumber = dayNumber,
-            isNumerator = isNumerator.toSqlBoolean(),
+            alternation = weekAlternation.toSqlInteger(),
             id = id
         )
     }
@@ -101,7 +104,7 @@ internal class SqlDelightScheduleDao(
         offset: Long?,
         limit: Long?,
         dayNumber: Long?,
-        isNumerator: Boolean?,
+        weekAlternation: WeekAlternation?,
         groupId: Long?,
         groupNumber: Long?,
         teacherId: Long?
@@ -110,7 +113,7 @@ internal class SqlDelightScheduleDao(
             offset = offset,
             limit = limit,
             dayNumber = dayNumber,
-            isNumerator = isNumerator?.toSqlBoolean(),
+            alternation = weekAlternation?.toSqlInteger(),
             groupId = groupId,
             groupNumber = groupNumber,
             teacherId = teacherId
@@ -178,7 +181,7 @@ internal class SqlDelightScheduleDao(
             isSubject = entry.isSubject.toBoolean(),
             lessonNumber = entry.lessonNumber,
             dayNumber = entry.dayNumber,
-            isNumerator = entry.isNumerator.toBoolean(),
+            weekAlternation = entry.alternation.toAlternation(),
         )
     }
 

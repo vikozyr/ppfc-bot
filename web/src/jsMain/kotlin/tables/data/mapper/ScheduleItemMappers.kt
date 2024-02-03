@@ -18,7 +18,7 @@ fun ScheduleItem.toRequest() = ScheduleRequest(
     eventName = eventName,
     lessonNumber = lessonNumber.toNumber(),
     dayNumber = dayNumber.toNumber(),
-    isNumerator = weekAlternation.isNumerator
+    weekAlternation = weekAlternation
 )
 
 fun ScheduleResponse.toDomain() = ScheduleItem(
@@ -30,5 +30,5 @@ fun ScheduleResponse.toDomain() = ScheduleItem(
     eventName = eventName,
     lessonNumber = lessonNumber.toLessonNumber(),
     dayNumber = dayNumber.toDayNumber(),
-    weekAlternation = isNumerator.toWeekAlternation()
+    weekAlternation = weekAlternation
 )

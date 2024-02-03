@@ -6,6 +6,7 @@ package tables.data.repository
 
 import androidx.paging.PagingState
 import app.cash.paging.PagingSource
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import core.domain.ApiException
 import tables.data.dao.ScheduleDao
 import tables.data.mapper.toDomain
@@ -79,7 +80,7 @@ class ScheduleRepositoryImpl(
                     limit = pageSize,
                     offset = offset,
                     dayNumber = dayNumber?.number,
-                    isNumerator = weekAlternation?.isNumerator,
+                    weekAlternation = weekAlternation,
                     groupId = group?.id?.value,
                     teacherId = teacher?.id?.value
                 )

@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS ScheduleDto (
     isSubject INTEGER NOT NULL,
     lessonNumber INTEGER NOT NULL,
     dayNumber INTEGER NOT NULL,
-    isNumerator INTEGER NOT NULL,
+    alternation INTEGER NOT NULL,
     FOREIGN KEY (groupId) REFERENCES GroupDto(id) ON DELETE CASCADE,
     FOREIGN KEY (classroomId) REFERENCES ClassroomDto(id) ON DELETE CASCADE,
     FOREIGN KEY (teacherId) REFERENCES TeacherDto(id) ON DELETE CASCADE,
@@ -22,7 +22,7 @@ SELECT
     ScheduleDto.isSubject AS isSubject,
     ScheduleDto.lessonNumber AS lessonNumber,
     ScheduleDto.dayNumber AS dayNumber,
-    ScheduleDto.isNumerator AS isNumerator,
+    ScheduleDto.alternation AS alternation,
 
     TeacherDto.id AS teacherId,
     TeacherDto.firstName AS teacherFirstName,
@@ -58,7 +58,7 @@ LEFT JOIN SubjectDto ON ScheduleDto.subjectId = SubjectDto.id
 WHERE (:limit IS NULL OR :limit = 0 OR :limit > 0)
 AND (:offset IS NULL OR :offset = 0 OR :offset > 0)
 AND (:dayNumber IS NULL OR dayNumber = :dayNumber)
-AND (:isNumerator IS NULL OR isNumerator = :isNumerator)
+AND (:alternation IS NULL OR alternation = :alternation)
 AND (:groupId IS NULL OR ScheduleDto.groupId = :groupId)
 AND (:groupNumber IS NULL OR GroupDto.number = :groupNumber)
 AND (:teacherId IS NULL OR teacherId = :teacherId)
@@ -84,7 +84,7 @@ UPDATE ScheduleDto SET
     isSubject = :isSubject,
     lessonNumber = :lessonNumber,
     dayNumber = :dayNumber,
-    isNumerator = :isNumerator
+    alternation = :alternation
 WHERE id = :id;
 
 insert:
@@ -98,7 +98,7 @@ INSERT INTO ScheduleDto(
     isSubject,
     lessonNumber,
     dayNumber,
-    isNumerator
+    alternation
 ) VALUES (
     nullif(:id, 0),
     :groupId,
@@ -109,5 +109,5 @@ INSERT INTO ScheduleDto(
     :isSubject,
     :lessonNumber,
     :dayNumber,
-    :isNumerator
+    :alternation
 );

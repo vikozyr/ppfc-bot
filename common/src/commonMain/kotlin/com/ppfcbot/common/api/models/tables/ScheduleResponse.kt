@@ -17,5 +17,5 @@ data class ScheduleResponse(
     val isSubject: Boolean,
     val lessonNumber: Long,
     val dayNumber: Long,
-    val isNumerator: Boolean
+    val weekAlternation: WeekAlternation
 )

@@ -7,6 +7,7 @@ package tables.presentation.screen.schedule
 import app.cash.paging.PagingConfig
 import app.cash.paging.PagingData
 import app.cash.paging.cachedIn
+import com.ppfcbot.common.api.models.tables.WeekAlternation
 import coreui.model.TextFieldState
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
